@@ -1,0 +1,38 @@
+/*This file is the main only for lists so I need to change the name to reflect that. I need to be able to tell the difference
+between this and the main website pages*/
+
+.nav a
+{
+	color: #5a5a5a;
+	font-size: 11;
+	font-weight: bold;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-transform: uppercase;
+}
+
+.nav li
+{
+	display: inline;
+}
+
+.buttons 
+{
+	background: #FF0000;
+}
+
+.header
+{
+	color: #0066FF;
+	font-size: 24px;
+	font-weight: bolder;
+	float: none;
+}
+
+.layout 
+{
+	background-image: url("https://cloud.githubusercontent.com/assets/4284667/8587032/8d0ee8c8-25c4-11e5-829f-f53e92ffe834.jpg");
+	background-repeat: no-repeat;
+}

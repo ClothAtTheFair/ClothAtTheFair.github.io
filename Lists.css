@@ -1,0 +1,24 @@
+#chalkboard {
+  position: absolute;
+}
+
+#chalkboard,
+#canvas,
+#output {
+  width: 768px;
+  height: 690px;
+}
+
+@media only screen and (orientation:landscape) {
+  #chalkboard {
+    top: 0;
+    left: 127px;
+  }
+}
+
+@media only screen and (orientation:portrait) {
+  #chalkboard {
+    top: 129px;
+    left: 0;
+  }
+}
