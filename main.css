@@ -33,6 +33,7 @@ between this and the main website pages*/
 
 .layout 
 {
-	background-image: url("https://cloud.githubusercontent.com/assets/4284667/8587032/8d0ee8c8-25c4-11e5-829f-f53e92ffe834.jpg");
-	background-repeat: no-repeat;
+	//background-image: url("https://cloud.githubusercontent.com/assets/4284667/8587032/8d0ee8c8-25c4-11e5-829f-f53e92ffe834.jpg");
+	//background-repeat: no-repeat;
+	color: #FFFF;
 }
