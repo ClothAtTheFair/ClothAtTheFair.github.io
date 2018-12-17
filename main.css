@@ -18,7 +18,7 @@ nav.navigation ul {
 	text-align: center;
 }
 nav.navigation ul li {
-	display: inline-block;
+	display: inline;
 }
 nav.navigation ul li a {
 	display: block;
