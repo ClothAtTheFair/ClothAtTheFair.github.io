@@ -1,23 +1,52 @@
 /*This file is the main only for lists so I need to change the name to reflect that. I need to be able to tell the difference
 between this and the main website pages*/
 
-.nav a
-{
-	color: #5a5a5a;
-	font-size: 11;
+#wrapper{
+	width:1024px;
+	margin:0 auto;
+}
+#header h1{
+	text-align: center;
+}
+nav.navigation{
+	display: block;
+	margin-bottom: 10px;
+}
+nav.navigation ul {
+	list-style: none;
+	font-size: 14px;
+	text-align: center;
+}
+nav.navigation ul li {
+	display: inline-block;
+}
+nav.navigation ul li a {
+	display: block;
+	float: left;
+	padding: 3px 6px;
+	color: #575c7d;
+	font-size: 22px;
+	text-decoration: none;
 	font-weight: bold;
-	padding-top: 14px;
-	padding-bottom: 14px;
-	padding-left: 10px;
-	padding-right: 10px;
-	text-transform: uppercase;
 }
-
-.nav li
-{
-	display: inline;
+nav.navigation ul li a:hover {
+	background #ccc;
+	color: #fff;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	padding: 3px 6px;
+	margin: 0;
+	text-decoration: none;
 }
-
+#left-sidebar {
+	width: 25%;
+	float: left;
+	margin: 0 15px;
+	background: #ccc;
+	min-height: 500px;
+	text-align: center;
+}
 .buttons 
 {
 	background: #FF0000;
