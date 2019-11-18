@@ -10,28 +10,32 @@ const links = [
 })
 
 const Nav = () => (
-    <ul className="nav nav-tabs">
-      <li>
-        <Link href='/'>
-          <a>Home</a>
-        </Link>
+  <div>
+    <ul className="nav nav-tabs" role="tablist">
+      <li className="nav-item">
+        <a className="nav-link active" data-toggle="tab"className="nav-link" data-toggle="tab" role="tab" href='/'
+        aria-controls="index" aria-selected="true"> Home
+        </a>
       </li>
-      <li>
-        <Link href='blog'>
-          <a>Blog</a>
-        </Link>
+      <li className="nav-item">
+        <a className="nav-link" data-toggle="tab" role="tab" href='blog' aria-controls="blog" aria-selected="false">
+          Blog
+        </a>
       </li>
-      <li>
-        <Link href='learning'>
-          <a>What I'm Learning</a>
-        </Link>
+      <li className="nav-item">
+        <a className="nav-link" data-toggle="tab" href='learning' role="tab" aria-controls="learning" aria-selected="false">
+          What I'm Learning
+        </a>
       </li>
-      <li>
-        <Link href='projects'>
-          <a>Projects</a>
-        </Link>
+      <li className="nav-item">
+        <a className="nav-link" data-toggle="tab" href='projects'role="tab" aria-controls="projects" aria-selected="false">
+          Projects
+        </a>
       </li>        
     </ul>
+
+
+    </div>
 )
 
 export default Nav
