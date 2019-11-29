@@ -13,27 +13,58 @@ const Projects = () => (
     </Head>
     <Nav />
 
-<hi>Some cool stuff that I will be showing soon!<br></br></hi>
+<h3>Some cool stuff that I will be showing soon!<br></br></h3>
 
-{/* <div className="card" > 
-  <img src="favicon.ico" className="card-img-top" alt="..."></img>
-  <div className="card-body">
-    <h5 className="card-title">Card title</h5>
-    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" className="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
+ {/* Keep 3 to a row */}
+    <div className="flex-container">
+      <div className="card" >
+        <img src="favicon.ico" className="card-img-top" alt="..."></img>
+        <div className="card-body">
+          <h5 className="card-title">Personal Website</h5>
+          <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" className="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
 
-<div className="card" >
-  <img src="favicon.ico" className="card-img-top" alt="..."></img>
-  <div className="card-body">
-    <h5 className="card-title">Card title</h5>
-    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" className="btn btn-primary">Go somewhere</a>
-  </div>
-</div> */}
+
+      <div className="card" >
+        <img src="favicon.ico" className="card-img-top" alt="..."></img>
+        <div className="card-body">
+          <h5 className="card-title">YouTube Channel and Twitch</h5>
+          <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" className="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+      <div className="card" >
+        <img src="favicon.ico" className="card-img-top" alt="..."></img>
+        <div className="card-body">
+          <h5 className="card-title">Adult for me bot</h5>
+          <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" className="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div className="flex-container">
+      <div className="card" >
+        <img src="favicon.ico" className="card-img-top" alt="..."></img>
+        <div className="card-body">
+          <h5 className="card-title">NFL betting bot</h5>
+          <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" className="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+    
 
 <style jsx>{`
+      .flex-container{
+        display: flex;
+        flex-direction: row;
+        padding: 1em;
+      }
       .card {
         width: 30%;
         color: black;
@@ -41,9 +72,13 @@ const Projects = () => (
         borderRadius: 4em;
         border: solid;
         overflow: hidden;
+        margin: 1em;
+
       }
       .card-title {
           textAlign: center;
+          color: black;
+          font-size: large;
       }
       
     `}</style>
