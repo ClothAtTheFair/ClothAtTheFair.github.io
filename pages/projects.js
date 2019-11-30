@@ -1,8 +1,18 @@
 import React from 'react'
 import Head from 'next/head'
 import Nav from '../components/nav'
+import Link from 'next/link'
+
+const PostLink = props => (
+  
+  <Link href={`/post?title=${props.title}`}>
+      <a className="btn btn-primary">{props.title}</a>
+  </Link>
+);
+
 
 const Projects = () => (
+
 <div>
 <Head>
       <title>Projects</title>
@@ -21,8 +31,9 @@ const Projects = () => (
         <img src="favicon.ico" className="card-img-top" alt="..."></img>
         <div className="card-body">
           <h5 className="card-title">Personal Website</h5>
-          <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" className="btn btn-primary">Go somewhere</a>
+          <p className="card-text">If you are reading this then you are seeing the new website I created.
+          This will go into more detail</p>
+          <a href="websiteDetails" className="btn btn-primary">Click Me!</a>
         </div>
       </div>
 
@@ -32,7 +43,7 @@ const Projects = () => (
         <div className="card-body">
           <h5 className="card-title">YouTube Channel and Twitch</h5>
           <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" className="btn btn-primary">Go somewhere</a>
+          <PostLink title = "Channels!"/>
         </div>
       </div>
 
@@ -41,7 +52,7 @@ const Projects = () => (
         <div className="card-body">
           <h5 className="card-title">Adult for me bot</h5>
           <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" className="btn btn-primary">Go somewhere</a>
+          <PostLink title = "Scheduler bot!"/>
         </div>
       </div>
 
@@ -53,7 +64,7 @@ const Projects = () => (
         <div className="card-body">
           <h5 className="card-title">NFL betting bot</h5>
           <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" className="btn btn-primary">Go somewhere</a>
+          <PostLink title = "Handball stuff!"/>
         </div>
       </div>
     </div>
@@ -84,6 +95,12 @@ const Projects = () => (
     `}</style>
 
 </div>
+
+  
+
 )
+
+
+
 
 export default Projects
