@@ -23,7 +23,8 @@ const Projects = () => (
     </Head>
     <Nav />
 
-<h3>Some cool stuff that I will be showing soon!<br></br></h3>
+<h3 className="header">Some cool projects that I want to work on and showcase!</h3>
+<h5 className="header">For 2020, I plan to do 6 projects in 12 months and below are the projected projects so far with projected timelines <br></br></h5>
 
  {/* Keep 3 to a row */}
     <div className="flex-container">
@@ -33,7 +34,7 @@ const Projects = () => (
           <h5 className="card-title">Personal Website</h5>
           <p className="card-text">If you are reading this then you are seeing the new website I created.
           This will go into more detail</p>
-          <a href="websiteDetails" className="btn btn-primary">Click Me!</a>
+          <a href="websiteDetails" className="btn btn-primary">Website!</a>
         </div>
       </div>
 
@@ -42,7 +43,7 @@ const Projects = () => (
         <img src="favicon.ico" className="card-img-top" alt="..."></img>
         <div className="card-body">
           <h5 className="card-title">YouTube Channel and Twitch</h5>
-          <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p className="card-text">Project details on the process of me setting up my Youtube channel for coding and twitch for gaming!</p>
           <PostLink title = "Channels!"/>
         </div>
       </div>
@@ -50,27 +51,52 @@ const Projects = () => (
       <div className="card" >
         <img src="favicon.ico" className="card-img-top" alt="..."></img>
         <div className="card-body">
+          <h5 className="card-title">Object Detection Dashcam</h5>
+          <p className="card-text">More information to come in March!</p>
+          <PostLink title = "Dashcam!"/>
+        </div>
+      </div>      
+
+    </div>
+{/* 
+    <div className="flex-container">
+
+    <div className="card" >
+        <img src="favicon.ico" className="card-img-top" alt="..."></img>
+        <div className="card-body">
           <h5 className="card-title">Adult for me bot</h5>
-          <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p className="card-text">A framework scheduler. The project will start in May 2020!</p>
           <PostLink title = "Scheduler bot!"/>
         </div>
       </div>
 
-    </div>
+    <div className="card" >
+        <img src="favicon.ico" className="card-img-top" alt="..."></img>
+        <div className="card-body">
+          <h5 className="card-title">Analytics Dashboard</h5>
+          <p className="card-text">More information to come in July 2020!</p>
+          <PostLink title = "Analytics!"/>
+        </div>
+      </div>
 
-    <div className="flex-container">
+    
       <div className="card" >
         <img src="favicon.ico" className="card-img-top" alt="..."></img>
         <div className="card-body">
-          <h5 className="card-title">NFL betting bot</h5>
-          <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <PostLink title = "Handball stuff!"/>
+          <h5 className="card-title">Stock Bot</h5>
+          <p className="card-text">A python coded stock trading bot but with a bit of NLP. The project starts September! </p>
+          <PostLink title = "stocks!"/>
         </div>
       </div>
+
     </div>
+     */}
     
 
 <style jsx>{`
+      .header {
+        padding-left: 1em;
+      }
       .flex-container{
         display: flex;
         flex-direction: row;
